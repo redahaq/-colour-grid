@@ -1,0 +1,98 @@
+:root {
+    /* colour variables  */
+    --glass: #a0a0a0;
+    --blackberry: #100618;
+    --fey: #3ba34c;
+
+    /* spacing variables: golden ratio */
+    --space-xs: 0.382rem;
+    --space-s: 0.618rem;
+    --space-m: 1rem;
+    --space-l: 1.618rem;
+    --space-xl: 2.618rem;
+    --space-xxl: 4.236rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 10vh;
+    background-color: var(--blackberry);
+    color: var(--glass);
+    padding: var(--space-m);
+    display: flex;
+    justify-content: space-between;
+    vertical-align: baseline;
+}
+
+h1 {
+    font-size: var(--space-xl);
+    font-weight: 900;
+    color: var(--fey);
+    text-decoration: underline var(--glass);
+}
+
+h2 {
+    display: flex;
+    font-weight: 300;
+    align-self: center;
+    text-decoration: underline var(--fey);
+}
+
+h3 {
+    margin: auto;
+}
+
+a {
+    color: var(--fey);
+}
+
+button {
+    font-size: var(--space-xl);
+    font-weight: 700;
+    background-color: var(--fey);
+    border-radius: 50%;
+}
+
+/* switch colour icon */
+.fa-redo {
+    color: var(--blackberry);
+    padding: var(--space-xs);
+    transition: 2s, 0.3s;
+    cursor: pointer;
+    border-style: none;
+}
+
+/* switch colour icon */
+.fa-redo:active {
+    transform: rotate(180deg);
+    transition: ease-in-out;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+div {
+    height: 85vh;
+    display: flex;
+}
+
+footer {
+    padding: 1rem;
+    background-color: var(--blackberry);
+    color: var(--glass);
+    height: 5vh;
+}
+
